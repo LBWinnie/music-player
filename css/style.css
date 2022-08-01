@@ -1,0 +1,68 @@
+/* css reset */
+body {
+  position: relative;
+  margin: 0;
+}
+.cover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(../img/cb.jpg);
+  background-size: cover;
+  filter: blur(3px);
+  transform: scale(1.1);
+}
+.player {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px 40px;
+  border-radius: 4px;
+  color: #000;
+  background: rgba(255, 255, 255, 0.5);
+}
+.player .main {
+  display: flex;
+}
+.player .buttons {
+  margin-top: 20px;
+}
+.player .buttons .iconfont {
+  font-size: 32px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.player .buttons .iconfont:hover {
+  opacity: 0.7;
+}
+.player .texts {
+  margin-left: 30px;
+}
+.player .texts h3 {
+  margin-top: 22px;
+  margin-bottom: 16px;
+}
+.player .texts p {
+  margin-top: 0px;
+}
+.player .bar {
+  height: 3px;
+  background: #ccc;
+  border-radius: 3px;
+}
+.player .bar .progress {
+  height: 100%;
+  width: 50%;
+  border-radius: 3px;
+  background: currentColor;
+}
+.player .time {
+  text-align: right;
+  margin-top: 8px;
+}
