@@ -3,15 +3,14 @@ body {
   position: relative;
   margin: 0;
 }
-.cover {
+.cover > img {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
-  background-image: url(../img/cb.jpg);
-  background-size: cover;
+  z-index: -2;
+  width: 100vw;
   filter: blur(3px);
   transform: scale(1.1);
 }
@@ -25,6 +24,7 @@ body {
   border-radius: 4px;
   color: #000;
   background: rgba(255, 255, 255, 0.5);
+  z-index: 1;
 }
 .player .main {
   display: flex;
@@ -58,11 +58,19 @@ body {
 }
 .player .bar .progress {
   height: 100%;
-  width: 50%;
+  width: 0%;
   border-radius: 3px;
   background: currentColor;
+  transition: width, 1s; /* 进度条变化平滑化 */
 }
 .player .time {
   text-align: right;
   margin-top: 8px;
+}
+#canvas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  z-index: -1;
 }
