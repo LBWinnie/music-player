@@ -1,5 +1,6 @@
+//获取数据
 let musicList = [];
-fetch("../data.json")
+fetch("./data.json")
   .then((res) => res.json())
   .then((ret) => {
     console.log(ret);
@@ -80,6 +81,7 @@ $preBtn.onclick = function () {
   setMusic();
 };
 
+//音频可视化
 let audioElement = $("#audio");
 let canvasElement = $("#canvas");
 let wave = new Wave(audioElement, canvasElement);
@@ -89,29 +91,3 @@ wave.addAnimation(
     count: 30,
   })
 );
-
-// let $pauseBtn = document.querySelector(".icon-pause");
-// let $$btns = document.querySelectorAll(".iconfont");
-// let $nextBtn = document.querySelector(".icon-play-right");
-
-// let audioObject = new Audio("../audio/HoneycombSummer.mp3");
-// $pauseBtn.onclick = function (e) {
-//   if ($pauseBtn.classList.contains("icon-pause")) {
-//     $pauseBtn.classList.remove("icon-pause");
-//     $pauseBtn.classList.add("icon-playing");
-//     audioObject.play();
-//     audioObject.volume = 0.5;
-//     console.log(audioObject.duration);
-//     console.log(audioObject.currentTime);
-//   } else {
-//     $pauseBtn.classList.remove("icon-playing");
-//     $pauseBtn.classList.add("icon-pause");
-//     audioObject.pause();
-//   }
-// };
-
-// $nextBtn.onclick = function () {
-//   audioObject.src = "../audio/LemonSquashCheers!.mp3";
-//   audioObject.play();
-//   audioObject.volume = 0.5;
-// };

@@ -1,26 +1,26 @@
 [
   {
-    "src": "../music/BeThePartyBee!.mp3",
+    "src": "./music/BeThePartyBee!.mp3",
     "title": "欢迎加入派对蜜蜂!",
     "author": "Crazy:B",
-    "img": "../img/cb01.jpg"
+    "img": "./img/cb01.jpg"
   },
   {
-    "src": "../music/HoneycombSummer.mp3",
+    "src": "./music/HoneycombSummer.mp3",
     "title": "蜂巢夏日",
     "author": "Crazy:B",
-    "img": "../img/cb02.jpg"
+    "img": "./img/cb02.jpg"
   },
   {
-    "src": "../music/AriadneAtFingertips.mp3",
+    "src": "./music/AriadneAtFingertips.mp3",
     "title": "指尖的阿里阿德涅",
     "author": "Crazy:B",
-    "img": "../img/cb03.jpg"
+    "img": "./img/cb03.jpg"
   },
   {
-    "src": "../music/LemonSquashCheers!!.mp3",
+    "src": "./music/LemonSquashCheers!!.mp3",
     "title": "柠檬气泡水干杯!!",
     "author": "Crazy:B & 2Wink",
-    "img": "../img/cb2wk.jpg"
+    "img": "./img/cb2wk.jpg"
   }
 ]
